@@ -37,7 +37,7 @@ score.goto(-350,270)
 score.write("Score: {}" .format(counter), font=style)
 score.hideturtle()
 
-counter_duration = 20
+counter_duration = 60
 sayac = turtle.Turtle()
 sayac.color("#2EF404")
 sayac.hideturtle()
