@@ -46,3 +46,9 @@ style = ("Courier", 25, "bold")
 sayac.goto(-350,240)
 sayac.write("Time : {}".format(counter_duration), font=style)
 sayac.hideturtle()
+
+def turn_left():
+    t.left(30)
+
+def turn_right():
+    t.right(30)
