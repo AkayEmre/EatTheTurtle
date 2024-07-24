@@ -49,11 +49,25 @@ sayac.hideturtle()
 
 def turn_left():
     t.left(30)
-
 def turn_right():
     t.right(30)
-
 
 s.listen()
 s.onkey(turn_left, "Left")
 s.onkey(turn_right, "Right")
+
+def countdown():
+    global counter_duration
+    if counter_duration > 0:
+        counter_duration -= 1
+        sayac.clear()
+        sayac.write("Time : {}".format(counter_duration), font=style)
+        s.ontimer(countdown, 1000)
+    else:
+        t.hideturtle()
+        t1.hideturtle()
+        sayac.clear()
+        sayac.goto(0, 0)
+        sayac.write("Time's up!", align="center", font=("Courier", 48, "normal"))
+
+countdown()
