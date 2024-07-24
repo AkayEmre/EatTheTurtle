@@ -27,3 +27,12 @@ style = ("Courier", 11, "bold")
 EMR.goto(+290,-320)
 EMR.write("Emre Akay" , font=style)
 EMR.hideturtle()
+
+counter = 0
+score = turtle.Turtle()
+score.color("#2EF404")
+score.penup()
+style = ("Courier", 25, "bold")
+score.goto(-350,270)
+score.write("Score: {}" .format(counter), font=style)
+score.hideturtle()
