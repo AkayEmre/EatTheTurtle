@@ -71,3 +71,16 @@ def countdown():
         sayac.write("Time's up!", align="center", font=("Courier", 48, "normal"))
 
 countdown()
+
+while counter_duration > 0:
+    t.forward(1)
+    if t.distance(t1) < 10:
+        t1.penup()
+        t1.goto(random.randint(-240, 240), random.randint(-240, 240))
+        counter += 1
+        score.clear()
+        score.write("Score: {}".format(counter), font=style)
+        score.hideturtle()
+
+
+turtle.mainloop()
