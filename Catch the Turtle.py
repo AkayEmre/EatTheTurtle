@@ -11,7 +11,7 @@ t.color("#E6F404")
 t.shape("triangle")
 t.shapesize(1)
 t.penup()
-t.speed(10)
+t.speed(0)
 
 t1 = turtle.Turtle()
 t1.color("#04F4D8")
