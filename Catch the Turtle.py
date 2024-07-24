@@ -52,3 +52,8 @@ def turn_left():
 
 def turn_right():
     t.right(30)
+
+
+s.listen()
+s.onkey(turn_left, "Left")
+s.onkey(turn_right, "Right")
