@@ -36,3 +36,13 @@ style = ("Courier", 25, "bold")
 score.goto(-350,270)
 score.write("Score: {}" .format(counter), font=style)
 score.hideturtle()
+
+counter_duration = 20
+sayac = turtle.Turtle()
+sayac.color("#2EF404")
+sayac.hideturtle()
+sayac.penup()
+style = ("Courier", 25, "bold")
+sayac.goto(-350,240)
+sayac.write("Time : {}".format(counter_duration), font=style)
+sayac.hideturtle()
